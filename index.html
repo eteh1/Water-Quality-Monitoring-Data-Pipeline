@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Quality Monitoring</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Water Quality Monitoring System</h1>
+
+    <div class="data-display">
+      <h2>Real-Time Data</h2>
+      <div id="data-list">
+        <!-- Real-time data will appear here -->
+      </div>
+    </div>
+
+    <div class="form">
+      <h2>Simulate Data Input</h2>
+      <label for="ph">pH Level:</label>
+      <input type="number" id="ph" placeholder="Enter pH Level" />
+      <label for="temp">Temperature (°C):</label>
+      <input type="number" id="temp" placeholder="Enter Temperature" />
+      <label for="turbidity">Turbidity (NTU):</label>
+      <input type="number" id="turbidity" placeholder="Enter Turbidity" />
+      <button onclick="submitData()">Submit Data</button>
+    </div>
+
+    <div class="storage">
+      <h2>Stored Data</h2>
+      <button onclick="toggleStorage()">Toggle Stored Data</button>
+      <div id="storage" class="hidden">
+        <ul id="stored-data-list">
+          <!-- Stored data will be shown here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
